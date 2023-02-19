@@ -28,19 +28,31 @@
     <div class="container">
         <form action="" class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+            <!-- <div class="input-group mb-3">
                 <input type="text" id="city-name" class="form-control" placeholder="Where would you like to go?"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                    <button onclick="searchTemperature()" class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                    <button onclick="()" class="btn btn-primary" type="button" id="button-addon2">Search</button>
                 </div>
-            </div>
+            </div> -->
         </form>
-        <div class="text-white text-center">
-            <img src="" id="image-icon" alt="">
-            <h1 id="city">Budapest</h1>
-            <h3><span id="temp">-5</span>&deg;C</h3>
+        <div class="weather text-white text-center">
+            <h1 class="city">Budapest</h1>
+            <div class="temp">13&deg;C</div>
+            <div class="flex">
+                <img class="icon" src="https://openweathermap.org/img/wn/01n@2x.png" alt="">
+                <div class="description">Haze</div>
+            </div>
+            <div class="humidity">Humidity: 63%</div>
+            <div class="wind">Wind speed: 7km/h</div>
         </div>
     </div>
+    <!--Link to JS file-->
     <script src="script.js"></script>
 </body>
 
