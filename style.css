@@ -1,8 +1,7 @@
 body {
     background-size: cover;
-    /* background: url(./images/background.jpg); */
+    background: url(./images/background.jpg);
     height: 100vh;
-    background-color: blue;
     margin: 0;
 }
 
@@ -27,8 +26,16 @@ body {
     font-size: 30px;
 }
 
-.card {
+.btn {
+    background-color: rgb(138, 215, 172);
+}
+
+.btn:hover {
+    background-color: rgb(28, 72, 58);
+}
+
+.search-bar {
+    width: 400px;
     align-items: center;
-    background: blue;
-    padding-top: 100px;
+    justify-content: center;
 }

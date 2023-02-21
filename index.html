@@ -14,7 +14,7 @@
 
 <body>
 
-    <!--Navbar starts here-->
+    <!--Bootstrap Navbar starts here-->
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -24,25 +24,19 @@
     </nav>
     <!--Navbar ends here-->
 
-    <!--Search bar-->
-    <div class="card">
-        <!-- <form action="" class="col-md-6 m-auto py-5"> -->
+    <!-- Bootstrap Search bar-->
+    <!--Weather API-->
+    <div class="container">
+        <form action="" class="col-md-6 m-auto py-5">
         <div class="search">
             <div class="input-group mb-3">
-                <input type="text" class="search-bar" placeholder="Where would you like to go?" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" class="search-bar" placeholder="Let's go to..." aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                 </div>
               </div>
         </div>
-            <!-- <div class="input-group mb-3">
-                <input type="text" id="city-name" class="form-control" placeholder="Where would you like to go?"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button onclick="()" class="btn btn-primary" type="button" id="button-addon2">Search</button>
-                </div>
-            </div> -->
-        <!-- </form> -->
+        </form>
         <div class="weather text-white text-center">
             <h1 class="city">Budapest</h1>
             <div class="temp">13&deg;C</div>
@@ -54,6 +48,8 @@
             <div class="wind">Wind speed: 7km/h</div>
         </div>
     </div>
+
+    
     <!--Link to JS file-->
     <script src="script.js"></script>
 </body>
