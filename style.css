@@ -1,7 +1,8 @@
 body {
     background-size: cover;
-    background: url(./images/background.jpg);
+    /* background: url(./images/background.jpg); */
     height: 100vh;
+    background-color: blue;
     margin: 0;
 }
 
@@ -26,3 +27,8 @@ body {
     font-size: 30px;
 }
 
+.card {
+    align-items: center;
+    background: blue;
+    padding-top: 100px;
+}
