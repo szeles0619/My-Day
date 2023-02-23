@@ -1,6 +1,6 @@
 // const APIKey = "28ccc1976154c3dfd88e7d0dd2a6153b";
 
-// 
+// This is a variable which contains the API key for the OpenWeatherAPI
 let weather = {
     apiKEY: "28ccc1976154c3dfd88e7d0dd2a6153b",
     fetchWeather: function (city) {
@@ -10,7 +10,7 @@ let weather = {
             .then((data) => this.displayWeather(data));
     },
 
-    // 
+    // Fetchig data from the OpenWeatherAPi to display the selected informations
     displayWeather: function (data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
@@ -37,41 +37,19 @@ document.querySelector(".search button")
         weather.search();
     });
 
-// //queryURL = "https://restcountries.com/v2/name/${countryName}"
+//Setting up variable to pass to REST countries API
+let container_2 = document.getElementById('container_2');
+let searchButton = document.getElementById('searchButton');
 
-// let searchBtn = document.getElementById("search-btn");
-
-// let countryInp = document.getElementById("country-inp");
-
-// searchBtn.addEventListener("click", () => {
-//     // let countryName = "Hungary";
-//     let queryURL = 'https://restcountries.com/v3.1/name/Hungary?fullText=true';
-//     console.log(queryURL); 
-//     fetch(queryURL)
-//     .then((response) => response.json())
-//     .then((data) => {
-//         //Get informations of the country ---- console.log(data);
-//         console.log(data[0]);
-//         console.log(data[0].capital[0]);
-//         console.log(data[0].continents[0]);
-//         console.log(data[0].flags.svg);
-//         console.log(data[0].borders);
-//         console.log(data[0].population);
-//     });
-// });
-
-
-let container_2 = document.getElementById('container_2')
-let searchButton = document.getElementById('searchButton')
-
-let country_name = document.getElementById('countryName')
-let officalName = document.getElementById('officalName')
-let capital = document.getElementById('capital')
-let population = document.getElementById('population')
-let continent = document.getElementById('continent')
+let country_name = document.getElementById('countryName');
+let officalName = document.getElementById('officalName');
+let capital = document.getElementById('capital');
+let population = document.getElementById('population');
+let continent = document.getElementById('continent');
 
 let storeCountryName = ''
 
+//Fetching the data from the REST countries API
 function fetchData() {
     let countryName = countryInput.value
 
@@ -79,10 +57,10 @@ function fetchData() {
         alert('Enter a  country name ...')
     }
     else {
-        fetch("https://restcountries.com/v3.1/name/Hungary?fullText=true")
+        fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                console.log(data[0].capital);
                 flag.classList.replace('inactive', 'active')
                 
                 //let number_formatter = new Intl.NumberFormat('en-US')
