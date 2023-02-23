@@ -86,12 +86,12 @@ function fetchData() {
                 flag.classList.replace('inactive', 'active')
                 
                 //let number_formatter = new Intl.NumberFormat('en-US')
-                country_name.innerHTML = data[0].name.common
+                country_name.innerHTML = 'Your selected country is: ' + data[0].name.common
                 //officalName.innerHTML = data[0].name
-                capital.innerHTML = data[0].capital
-                population.innerHTML = data[0].population
+                capital.innerHTML = 'Capital: ' + data[0].capital
+                population.innerHTML = 'Population: ' + data[0].population
                 flag.src = data[0].flags.png
-                continent.innerHTML = data[0].continents
+                continent.innerHTML = 'Find in: ' + data[0].continents
             })
             .catch(() => {
                 alert('Invalid country name...')
