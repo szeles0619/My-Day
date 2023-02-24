@@ -62,10 +62,8 @@ function fetchData() {
             .then(data => {
                 console.log(data[0].capital);
                 flag.classList.replace('inactive', 'active')
-                
-                //let number_formatter = new Intl.NumberFormat('en-US')
+
                 country_name.innerHTML = 'Your selected country is: ' + data[0].name.common
-                //officalName.innerHTML = data[0].name
                 capital.innerHTML = 'Capital: ' + data[0].capital
                 population.innerHTML = 'Population: ' + data[0].population
                 flag.src = data[0].flags.png
@@ -75,14 +73,14 @@ function fetchData() {
                 alert('Invalid country name...')
                 location.reload()
             })
-            storeCountryName = countryName
-            countryInput.value = ''
-            searchButton.classList.replace('active', 'inactive')
+        storeCountryName = countryName
+        countryInput.value = ''
+        searchButton.classList.replace('active', 'inactive')
 
-            //localStorage for user input for capital city
-            localStorage.setItem('country', 'capital');
-            console.log(localStorage.getItem('capital'));
-            
+        //localStorage for user input for capital city
+        localStorage.setItem('country', 'capital');
+        console.log(localStorage.getItem('capital'));
+
     }
 }
 
