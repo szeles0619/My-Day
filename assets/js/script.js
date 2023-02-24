@@ -54,7 +54,7 @@ function fetchData() {
     let countryName = countryInput.value
 
     if (countryName == '') {
-        alert('Enter a  country name ...')
+        //alert('Enter a  country name ...') //this is an alert when you click search without puttin any text
     }
     else {
         fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
@@ -78,7 +78,13 @@ function fetchData() {
             storeCountryName = countryName
             countryInput.value = ''
             searchButton.classList.replace('active', 'inactive')
+
+            //localStorage for user input for capital city
+            localStorage.setItem('country', 'capital');
+            console.log(localStorage.getItem('capital'));
+            
     }
 }
 
 searchButton.addEventListener('click', fetchData)
+
