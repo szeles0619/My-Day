@@ -41,7 +41,7 @@ It will look like this:
 <img width="960" alt="Project4" src="https://user-images.githubusercontent.com/119215005/221164634-9e6c8f50-81d4-482e-81fd-b03e64657517.png">
 
 
-Link to deployed website: 
+Link to deployed website:  https://szeles0619.github.io/My-Day/
 
 ## Credits
 
