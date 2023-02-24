@@ -11,7 +11,7 @@ In this project I learned a lot about Server-Side APIs especially the 2 I used O
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [Features] (#features)
+- [Features](#features)
 - [License](#license)
 
 ## Installation
@@ -39,6 +39,9 @@ Let's stay at the same example. We know that New York is located in the United S
 It will look like this:
 
 <img width="960" alt="Project4" src="https://user-images.githubusercontent.com/119215005/221164634-9e6c8f50-81d4-482e-81fd-b03e64657517.png">
+
+
+Link to deployed website: 
 
 ## Credits
 
